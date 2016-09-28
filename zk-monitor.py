@@ -174,6 +174,8 @@ def stats_to_metrics(endpoint, stats):
         ('zk_approximate_data_size','GAUGE'),
         ('zk_open_file_descriptor_count','GAUGE'),
         ('zk_max_file_descriptor_count','GAUGE'),
+	('zk_pending_syncs','GAUGE'),
+	('zk_followers','GAUGE'),
     ]
     for key,vtype in monit_keys:
         try:
